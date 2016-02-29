@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <!-- Base slider styling -->
+    <link href="css/jquery.boottab-slider.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      body {
+        width: 100%;
+        margin: 2em 0 0;
+      }
+      .page-section {
+        width: 90%;
+        max-width: 1340px;
+        margin: 0 auto;
+      }
+      .tab-pane {
+        padding: 2em 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page-section">
+      <!-- Nav / tab parent container -->
+      <div class="boottab-slider">
+        <!-- Scroll left and right buttons -->
+        <a href="#" class="boottab-slider__scroll-left"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a>
+        <a href="#" class="boottab-slider__scroll-right"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+        <div class="boottab-slider__wrapper">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist" id="exampleNav">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            <li role="presentation"><a href="#morestuff" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 1</a></li>
+            <li role="presentation"><a href="#morestuff2" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 2</a></li>
+            <li role="presentation"><a href="#morestuff3" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 3</a></li>
+            <li role="presentation"><a href="#morestuff4" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 4</a></li>
+            <li role="presentation"><a href="#morestuff5" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 5</a></li>
+            <li role="presentation"><a href="#morestuff6" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 6</a></li>
+            <li role="presentation"><a href="#morestuff7" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 7</a></li>
+            <li role="presentation"><a href="#morestuff8" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 8</a></li>
+            <li role="presentation"><a href="#morestuff9" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 9</a></li>
+            <li role="presentation"><a href="#morestuff10" aria-controls="settings" role="tab" data-toggle="tab">More Stuff 10</a></li>
+          </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">Home Tab!</div>
+          <div role="tabpanel" class="tab-pane" id="profile">Profile Tab!</div>
+          <div role="tabpanel" class="tab-pane" id="messages">Messages Tab!</div>
+          <div role="tabpanel" class="tab-pane" id="settings">Settings Tab!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff">More Stuff Tab 1!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff2">More Stuff Tab 2!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff3">More Stuff Tab 3!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff4">More Stuff Tab 4!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff5">More Stuff Tab 5!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff6">More Stuff Tab 6!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff7">More Stuff Tab 7!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff8">More Stuff Tab 8!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff9">More Stuff Tab 9!</div>
+          <div role="tabpanel" class="tab-pane" id="morestuff10">More Stuff Tab 10!</div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/jquery.boottab-slider.min.js" type="text/javascript"></script>
+    <script>
+      // Bootstrap functionality
+      $('#exampleNav a').click(function(event) {
+        $(this).tab('show');
+        event.preventDefault();
+      });
+
+      // Default Setup
+      $('.boottab-slider').bootTabSlider({
+        complete: function() {
+          console.log("Completed");
+        }
+      });
+    </script>
+  </body>
+</html>
