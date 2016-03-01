@@ -21,10 +21,10 @@
     var $element = $(element),
         plugin = this,
         tabs = $element.find('.nav-tabs > li').toArray(),
-        $wrapper = $(element).find('.boottab-slider__wrapper'),
+        $wrapper = $(element).find('.boot-tab-slider__wrapper'),
         $nav = $(element).find('.nav-tabs'),
-        $scrollLeft = $element.find('.boottab-slider__scroll-left'),
-        $scrollRight = $element.find('.boottab-slider__scroll-right');
+        $scrollLeft = $element.find('.boot-tab-slider__scroll-left'),
+        $scrollRight = $element.find('.boot-tab-slider__scroll-right');
     plugin.DEFAULTS = {
       complete: null
     };

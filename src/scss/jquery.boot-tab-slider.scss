@@ -13,8 +13,8 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
- 
-.boottab-slider {
+
+.boot-tab-slider {
   position: relative;
 
   &__wrapper {
@@ -31,7 +31,7 @@
   &__scroll-left,
   &__scroll-right {
     position: absolute;
-    //display: none;
+    display: none;
     top: .5em;
     font-size: 1.5em;
   }

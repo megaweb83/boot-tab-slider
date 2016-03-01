@@ -1,7 +1,7 @@
 <html>
   <head>
     <!-- Base slider styling -->
-    <link href="css/jquery.boottab-slider.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.boot-tab-slider.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <style>
       body {
@@ -21,11 +21,11 @@
   <body>
     <section class="page-section">
       <!-- Nav / tab parent container -->
-      <div class="boottab-slider">
+      <div class="boot-tab-slider">
         <!-- Scroll left and right buttons -->
-        <a href="#" class="boottab-slider__scroll-left"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a>
-        <a href="#" class="boottab-slider__scroll-right"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
-        <div class="boottab-slider__wrapper">
+        <a href="#" class="boot-tab-slider__scroll-left"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a>
+        <a href="#" class="boot-tab-slider__scroll-right"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+        <div class="boot-tab-slider__wrapper">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist" id="exampleNav">
             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
@@ -65,7 +65,7 @@
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="js/jquery.boottab-slider.min.js" type="text/javascript"></script>
+    <script src="js/jquery.boot-tab-slider.min.js" type="text/javascript"></script>
     <script>
       // Bootstrap functionality
       $('#exampleNav a').click(function(event) {
@@ -74,7 +74,7 @@
       });
 
       // Default Setup
-      $('.boottab-slider').bootTabSlider({
+      $('.boot-tab-slider').bootTabSlider({
         complete: function() {
           console.log("Completed");
         }

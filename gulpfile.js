@@ -47,7 +47,7 @@
     return gulp.src(paths.scss)
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(postcss(processors))
-      .pipe(concat('jquery.boottab-slider.min.css'))
+      .pipe(concat('jquery.boot-tab-slider.min.css'))
       .pipe(gulp.dest(dist + '/css'));
   });
 
@@ -67,7 +67,7 @@
   */
   gulp.task('compress-js', function() {
     return gulp.src(paths.js)
-      .pipe(concat('jquery.boottab-slider.min.js'))
+      .pipe(concat('jquery.boot-tab-slider.min.js'))
       .pipe(uglify().on('error', function(error) {
         console.log(error);
       }))
