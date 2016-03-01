@@ -17,10 +17,10 @@ Place them in your directory and link to them from your implementation page - in
 
 ## Implementation
 
-To instantiate the Boot Tab Slider, add the standard nav tab structure from the Bootstrap website. Then add the class `boot-tab-slider` to the container div in the snippet above. Then wrap the nav tabs in an additional container, with the class of `boot-tab-slider__wrapper`. It should look like the following, when complete:
+To instantiate the Boot Tab Slider, add the standard nav tab structure from the [Bootstrap website](http://getbootstrap.com/javascript/#tabs). Then add the class `boot-tab-slider` to the container div in the snippet above. Then wrap the nav tabs in an additional container, with the class of `boot-tab-slider__wrapper`. It should look like the following, once finalized:
 
 ```html
-<div class="boot-tab-slider">
+<div class="boot-tab-slider" id="my-slider-container">
   <div class="boot-tab-slider__wrapper">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
@@ -40,11 +40,11 @@ To instantiate the Boot Tab Slider, add the standard nav tab structure from the 
 </div>
 ```
 
-Then initialize the Boot Tab Slider on the container element by adding the following in a script tag or separate js file:
+Then initialize the Boot Tab Slider on the container by targeting that element in a script tag or separate js file (this can be whatever selector you want):
 
 ```javascript
 // Default setup
-$('.boot-tab-slider').bootTabSlider();
+$('#my-slider-container').bootTabSlider();
 ```
 
 **Note:** This plugin does not currently support the Bootstrap dropdown nav tabs functionality.
@@ -67,8 +67,8 @@ Example usage:
 
 ```javascript
 // Reset tab position
-$('.boot-tab-slider').data('bootTabSlider').resetTabs();
+$('#my-slider-container').data('bootTabSlider').resetTabs();
 
 // Invoke scroll left or right
-$('.boot-tab-slider').data('bootTabSlider').scrollTabs('right');
+$('#my-slider-container').data('bootTabSlider').scrollTabs('right');
 ```
